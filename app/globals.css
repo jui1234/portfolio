@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -5,25 +7,61 @@
 }
 
 :root {
-  --primary-color: #0070f3;
-  --background-color: #ffffff;
-  --text-color: #111111;
-
-  --font-main: "Inter", sans-serif;
   --max-width: 1200px;
+
+  /*light mode colors*/
+   --background-color: #ffffff;
+  --text-color: #111111;
+  --navbar-color: #f8f9fa;
+  --border-color: #000000;
+
+  --font-primary:'Inter', sans-serif;
+  --font-secondary:'poppins', sans-serif;
+
+   /* Font weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Font sizes */
+  --fs-xxl: 3rem;      /* Big headings (Hero) */
+  --fs-xl: 2.25rem;    /* Section headings */
+  --fs-lg: 1.5rem;     /* Subheadings */
+  --fs-md: 1.125rem;   /* Body text large */
+  --fs-base: 1rem;     /* Normal body */
+  --fs-sm: 0.875rem;   /* Small text */
+  --fs-xs: 0.75rem;    /* Badges, labels */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #0a0a0a;
     --text-color: #f1f1f1;
+     --navbar-color: #1A0B2E;
   }
+} */
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #ffffff;
+    --text-color: #111111;
+    --navbar-color: #f8f9fa;   
+  }
+  
+} */
+
+html.dark-mode{
+    --background-color: #0a0a0a;
+    --text-color: #f1f1f1;
+     --navbar-color: #1A0B2E;
+     --border-color: #f1f1f1;
 }
 
 body {
   background: var(--background-color);
   color: var(--text-color);
-  font-family: var(--font-main);
+  font-family: var(--font-primary);
   line-height: 1.6;
 }
 
